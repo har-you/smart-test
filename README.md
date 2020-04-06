@@ -21,7 +21,6 @@
 ## API
 
 ### Create Question
-`
    POST http://{host}/create`
 
 ### Update Question
