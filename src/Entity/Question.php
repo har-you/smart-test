@@ -9,7 +9,6 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
 /**
  * Class Question
- * @ORM\Entity()
  */
 class Question
 {

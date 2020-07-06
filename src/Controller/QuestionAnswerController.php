@@ -5,8 +5,6 @@ namespace App\Controller;
 use App\Entity\Question;
 use App\Entity\QuestionHistoric;
 use App\Form\QuestionType;
-use App\Service\Export\CsvExporter;
-use App\Service\Export\Exporter;
 use App\Service\FaqBot;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;

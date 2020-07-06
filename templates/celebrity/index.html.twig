@@ -1,0 +1,20 @@
+{{ form_start(form) }}
+{{ form_label(form.firstLastname) }}
+{{ form_widget(form.firstLastname) }}
+
+{{ form_label(form.nickName) }}
+{{ form_widget(form.nickName) }}
+
+{{ form_label(form.profession) }}
+{{ form_widget(form.profession) }}
+
+{{ form_label(form.nationality) }}
+{{ form_widget(form.nationality) }}
+
+{{ form_label(form.city) }}
+{{ form_widget(form.city) }}
+<br/>
+<input type="submit"  formaction="{{ path('celebrity_search') }}" value="Search"/>
+{{ form_end(form) }}
+<br/><br/><br/>
+{% include 'celebrity/search.html.twig' %}

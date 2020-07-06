@@ -1,0 +1,34 @@
+
+<table id="celebrity_results" width="100%">
+    <thead>
+    <tr>
+        <th>Nom / Prénom</th>
+        <th>Surnom</th>
+        <th>Profession</th>
+        <th>Nationalité</th>
+        <th>Ville Sépulture</th>
+        <th>Cimetiaire</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+        {% if celebrities is defined and celebrities is not empty %}
+        {% for celebrity in celebrities %}
+            <tr>
+                <td> {{ celebrity.lastFirstName }}</td>
+                <td> {{ celebrity.nickName }}</td>
+                <td> {% for profession in celebrity.profession %}
+                        {{ profession }}
+                    {% endfor %}</td>
+                <td> {% for nationality in celebrity.nationality %}
+                    {{ nationality }}
+            {% endfor %}
+                </td>
+                <td> {{ celebrity.cemetery.city.label }}</td>
+                <td> {{ celebrity.cemetery.name }}, {{ celebrity.cemetery.address }} </td>
+                <td> <button>Consulter la fiche complète</button></td>
+            </tr>
+        {% endfor %}
+    {% endif %}
+    </tbody>
+</table>

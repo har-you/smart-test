@@ -8,7 +8,6 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Class Answer
  *
- * @ORM\Entity()
  */
 class Answer
 {

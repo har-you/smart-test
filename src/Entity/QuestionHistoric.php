@@ -7,7 +7,6 @@ use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Class QuestionHistoric
- * @ORM\Entity(repositoryClass="App\Repository\QuestionHistoricRepository")
  */
 class QuestionHistoric
 {

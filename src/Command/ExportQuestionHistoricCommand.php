@@ -55,7 +55,7 @@ The <info>%command.name%</info> Export of all changes of questions that are stor
 
 
 You can specify the format of the export, by default export format is csv, if a format is not supported an error will be logged
-the email address specified in the <comment>--format</comment> option:
+the format specified in the <comment>--format</comment> option:
 
   <info>php %command.full_name%</info> <comment>--format=csv</comment>
 
